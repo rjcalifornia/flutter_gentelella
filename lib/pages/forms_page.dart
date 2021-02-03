@@ -12,6 +12,7 @@ class GeneralFormsPage extends StatefulWidget {
 class _GeneralFormsPageState extends State<GeneralFormsPage> {
   DateTime selectedDate = DateTime.now();
   var birthdate = TextEditingController();
+  bool isSwitched = false;
 
   Future<Null> _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
@@ -118,6 +119,43 @@ class _GeneralFormsPageState extends State<GeneralFormsPage> {
                                         ),
                                       ),
                                     ),
+                                    SizedBox(
+                                      height: 28,
+                                    ),
+                                    Container(
+                                        child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Icon(Icons.question_answer),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Flexible(
+                                              child: Text(
+                                                  "Accept terms of service? "),
+                                            ),
+                                            Switch(
+                                                value: isSwitched,
+                                                onChanged: (value) {
+                                                  setState(() {
+                                                    isSwitched = value;
+                                                  });
+                                                }),
+                                          ],
+                                        )
+                                      ],
+                                    )),
+                                    SizedBox(
+                                      height: 28,
+                                    ),
+                                    ElevatedButton(
+                                        onPressed: () {},
+                                        child: Text("Create user account"))
                                   ],
                                 ),
                               ),
