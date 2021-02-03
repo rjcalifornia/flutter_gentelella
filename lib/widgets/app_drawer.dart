@@ -186,7 +186,7 @@ class _AppDrawerState extends State<AppDrawer> with RouteAware {
                           child: ListTile(
                             leading: const Icon(Icons.logout),
                             title: const Text(
-                              "Salir del sistema",
+                              "Logout",
                             ),
                             onTap: () async {
                               Navigator.pushReplacementNamed(context, '/login');

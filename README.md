@@ -1,3 +1,5 @@
+<img src="img/preview.png">
+
 # gentelella_flutter
 [![Codemagic build status](https://api.codemagic.io/apps/5d8b2a4f45c4dc0011f7fc38/5d8b2a4f45c4dc0011f7fc37/status_badge.svg)](https://codemagic.io/apps/5d8b2a4f45c4dc0011f7fc38/5d8b2a4f45c4dc0011f7fc37/latest_build)
 
